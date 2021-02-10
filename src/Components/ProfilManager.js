@@ -14,7 +14,7 @@ export default function ProfilManager() {
 
         async function fetchData() {
 
-            const url1 = await axios('http://localhost:8080/agence/' + id + 'utilisateurs/');
+            const url1 = await axios('http://localhost:8080/agence/' + id + '/utilisateurs/');
             setDataUtilisateur(url1.data)
             const url2 = await axios('http://localhost:8080/agence/' + id);
             setDataAgence(url2.data)
