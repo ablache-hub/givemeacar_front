@@ -37,18 +37,16 @@ export default function Vehicule() {
         }
         fetchData()
     }, [])
-    // console.log(dataVehicule)
+    console.log(dataVehicule)
     
+    const handleChange = (event) => {
+        setIsChecked({ ...isChecked, [event.target.name]: event.target.checked });
+      };
     useEffect(() => {
         setIsChecked(dataVehicule.available)
         console.log(isChecked)
     }, [])
-    
-    const handleChange = (event) => {
-        setIsChecked({...isChecked, [event.target.name]: event.target.checked });
-        console.log(isChecked)
 
-      };
     
 
     return (
@@ -74,7 +72,6 @@ export default function Vehicule() {
                     <FormControlLabel
                         control={<Switch
                             checked={isChecked}
-                            value={isChecked}
                             onChange={handleChange} 
                             name="checkedA" />
                         }

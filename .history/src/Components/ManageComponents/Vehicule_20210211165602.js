@@ -74,7 +74,6 @@ export default function Vehicule() {
                     <FormControlLabel
                         control={<Switch
                             checked={isChecked}
-                            value={isChecked}
                             onChange={handleChange} 
                             name="checkedA" />
                         }

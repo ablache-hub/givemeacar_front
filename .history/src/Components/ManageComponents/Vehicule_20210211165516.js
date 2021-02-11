@@ -45,9 +45,7 @@ export default function Vehicule() {
     }, [])
     
     const handleChange = (event) => {
-        setIsChecked({...isChecked, [event.target.name]: event.target.checked });
-        console.log(isChecked)
-
+        setIsChecked({ isChecked, [event.target.name]: event.target.checked });
       };
     
 
@@ -74,7 +72,6 @@ export default function Vehicule() {
                     <FormControlLabel
                         control={<Switch
                             checked={isChecked}
-                            value={isChecked}
                             onChange={handleChange} 
                             name="checkedA" />
                         }
