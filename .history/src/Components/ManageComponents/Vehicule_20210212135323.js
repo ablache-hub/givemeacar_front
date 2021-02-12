@@ -25,7 +25,8 @@ const useStyle = makeStyles((theme) => ({
     button: {
         background: 'red',
         color: 'white',
-        margin: 'auto'
+        justifyContent: 'center',
+        alignItems: 'center'
     }
 }))
 export default function Vehicule(props) {
@@ -63,8 +64,8 @@ export default function Vehicule(props) {
 
 
     return (
-        
-            <Grid item style={{  flexBasis:'unset' }} lg={8}>
+        <Grid container style={{ background: 'purple' }}>
+            <Grid item style={{ background: 'green' }} lg={8}>
 
                 <Card className={classes.card}>
                     <CardHeader
@@ -114,5 +115,6 @@ export default function Vehicule(props) {
                     </CardActions>
                 </Card>
             </Grid>
+        </Grid>
     )
 }

@@ -4,8 +4,8 @@ import {Typography} from '@material-ui/core'
 
 export default function ManagerInterface() {
     return (
-        <>
-            <Manage />
-        </>
+        <div>
+            <Manage style={{float: 'right'}}/>
+        </div>
     )
 }

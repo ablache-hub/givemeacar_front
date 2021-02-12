@@ -5,14 +5,14 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
     return (
         <Router>
-            <Grid container spacing={3} style={{background: 'black'}}>
-                <Grid item item lg={1} md={1} sm={1} xs={1} style={{background: 'red', padding:0}}></Grid>
-                <Grid item item lg={10} md={10} sm={10} xs={10} style={{background: 'blue', padding:0}}>
+            <Grid container spacing={3} style={{ width:'100vw', height: '100vh', background: 'black'}}>
+                <Grid item item lg={1} md={1} sm={1} xs={1} style={{background: 'red'}}></Grid>
+                <Grid item item lg={10} md={10} sm={10} xs={10} style={{background: 'blue'}}>
                     <Switch>
                         <Route path="/" component={Interface} />
                     </Switch>
                 </Grid>
-                <Grid item item lg={1} md={1} sm={1} xs={1} style={{background: 'green', padding: 0}} ></Grid>
+                <Grid item item lg={1} md={1} sm={1} xs={1} style={{background: 'green'}} ></Grid>
             </Grid>
         </Router>
     );

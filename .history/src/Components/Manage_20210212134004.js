@@ -7,8 +7,12 @@ import axios from 'axios'
 
 
 const useStyle = makeStyles((theme) => ({
+    root: {
+        flexGrow: 1,
+        display: 'flex'
+    },
     paper: {
-        display: 'flex',
+        width: '100%',
         padding: 50
     },
 }))
@@ -38,11 +42,9 @@ export default function Manage() {
 
     return (
         <Paper className={classes.paper}>
-            <Grid container  direction="row" spacing={3} justify='center'>
-                {dataVehicule.map((item, id) => (
-                    <Vehicule key={id} {...item} />
-                ))}
-            </Grid>
+            {dataVehicule.map((item, id) => (
+                <Vehicule key={id} {...item} />
+            ))}
         </Paper>
     )
 }

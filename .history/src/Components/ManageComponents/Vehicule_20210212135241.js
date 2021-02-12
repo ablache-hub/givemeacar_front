@@ -23,9 +23,7 @@ const useStyle = makeStyles((theme) => ({
         justifyContent: 'space-between'
     },
     button: {
-        background: 'red',
-        color: 'white',
-        margin: 'auto'
+        color: 'red',
     }
 }))
 export default function Vehicule(props) {
@@ -63,8 +61,8 @@ export default function Vehicule(props) {
 
 
     return (
-        
-            <Grid item style={{  flexBasis:'unset' }} lg={8}>
+        <Grid container style={{ background: 'purple' }}>
+            <Grid item style={{ background: 'green' }} lg={8}>
 
                 <Card className={classes.card}>
                     <CardHeader
@@ -114,5 +112,6 @@ export default function Vehicule(props) {
                     </CardActions>
                 </Card>
             </Grid>
+        </Grid>
     )
 }

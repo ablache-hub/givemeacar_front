@@ -10,9 +10,9 @@ import Switch from '@material-ui/core/Switch';
 const useStyle = makeStyles((theme) => ({
     card: {
         background: 'white',
-        width: '100%',
-        height: '100%',
-
+        width: '50%',
+        height: '50%',
+        margin: 50
     },
     media: {
         width: '100%',
@@ -21,11 +21,6 @@ const useStyle = makeStyles((theme) => ({
     switch: {
         display: 'flex',
         justifyContent: 'space-between'
-    },
-    button: {
-        background: 'red',
-        color: 'white',
-        margin: 'auto'
     }
 }))
 export default function Vehicule(props) {
@@ -63,8 +58,8 @@ export default function Vehicule(props) {
 
 
     return (
-        
-            <Grid item style={{  flexBasis:'unset' }} lg={8}>
+        <Grid container style={{background: 'purple'}}>
+            <Grid item style={{background: 'green'}} lg={6}> 
 
                 <Card className={classes.card}>
                     <CardHeader
@@ -108,11 +103,12 @@ export default function Vehicule(props) {
                         </FormGroup>
                     </CardActions>
                     <CardActions>
-                        <Button className={classes.button} variant="contained">
+                        <Button>
                             Delete this car
-                        </Button>
+                </Button>
                     </CardActions>
                 </Card>
             </Grid>
+        </Grid>
     )
 }

@@ -64,7 +64,7 @@ export default function Vehicule(props) {
 
     return (
         
-            <Grid item style={{  flexBasis:'unset' }} lg={8}>
+            <Grid item style={{ background: 'green', flexBasis:'unset' }} lg={8}>
 
                 <Card className={classes.card}>
                     <CardHeader

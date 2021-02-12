@@ -9,6 +9,7 @@ import axios from 'axios'
 const useStyle = makeStyles((theme) => ({
     paper: {
         display: 'flex',
+        // width: '100%',
         padding: 50
     },
 }))
