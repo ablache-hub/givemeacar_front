@@ -43,7 +43,6 @@ export default function ManagerInterface() {
     const classes = useStyles();
 
     const managerId = 1;
-    let print = "";
     const [dataAgence, setDataAgence] = useState([]);
     const [dataManager, setDataManager] = useState([]);
 
