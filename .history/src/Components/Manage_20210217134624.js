@@ -26,7 +26,7 @@ export default function Manage() {
                 alignItems="center"
                 style={{display: 'flex',  overflow:'scroll'}}
             >
-                <Grid item style={{display: 'flex', flexWrap: 'wrap', justifyContent:'space-between'}}>
+                <Grid item style={{display: 'flex', overflow:'hidden'}}>
                     <Vehicule />
                 </Grid>
             </Grid>

@@ -21,12 +21,8 @@ export default function Manage() {
 
     return (
         <Paper className={classes.paper}>
-            <Grid container spacing={3} direction="column"
-                justify="space-between"
-                alignItems="center"
-                style={{display: 'flex',  overflow:'scroll'}}
-            >
-                <Grid item style={{display: 'flex', flexWrap: 'wrap', justifyContent:'space-between'}}>
+            <Grid container >
+                <Grid item>
                     <Vehicule />
                 </Grid>
             </Grid>

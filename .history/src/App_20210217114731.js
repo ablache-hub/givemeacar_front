@@ -10,7 +10,7 @@ function App() {
                 <Grid item item lg={1} md={1} sm={1} xs={1} style={{background: 'red', padding:0}}></Grid>
                 <Grid item item lg={10} md={10} sm={10} xs={10} style={{background: 'blue', padding:0}}>
                     <Switch>
-                        <Route path="/" component={Interface} />
+                        <Route path="/" component={Vehicule} />
                     </Switch>
                 </Grid>
                 <Grid item item lg={1} md={1} sm={1} xs={1} style={{background: 'green', padding: 0}} ></Grid>

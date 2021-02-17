@@ -11,8 +11,7 @@ const useStyle = makeStyles((theme) => ({
     card: {
         background: 'white',
         margin: 50,
-        flex: "0 0 200px",
-        width:200
+        flex: "1 0 200px"
 
     },
     media: {

@@ -10,9 +10,9 @@ import Switch from '@material-ui/core/Switch';
 const useStyle = makeStyles((theme) => ({
     card: {
         background: 'white',
+        // width: '100%',
         margin: 50,
-        flex: "0 0 200px",
-        width:200
+        flex: "1 0 auto"
 
     },
     media: {

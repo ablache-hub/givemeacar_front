@@ -10,9 +10,7 @@ import Switch from '@material-ui/core/Switch';
 const useStyle = makeStyles((theme) => ({
     card: {
         background: 'white',
-        margin: 50,
-        flex: "0 0 200px",
-        width:200
+        width: '100%',
 
     },
     media: {
@@ -78,7 +76,11 @@ export default function Vehicule(props) {
 
 
     return (
-        <>
+        <Grid container direction="row"
+        justify="space-between"
+        alignItems="center">
+
+            <Grid item style={{ display: 'flex' }} lg={12} spacing={3}>
                 {dataVehicule.map((item, id) => (
                     <Card className={classes.card}>
                         <CardHeader
@@ -128,6 +130,7 @@ export default function Vehicule(props) {
                         </CardActions>
                     </Card>
                 ))}
-        </>
+            </Grid>
+        </Grid>
     )
 }

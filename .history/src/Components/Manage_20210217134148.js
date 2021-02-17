@@ -24,9 +24,9 @@ export default function Manage() {
             <Grid container spacing={3} direction="column"
                 justify="space-between"
                 alignItems="center"
-                style={{display: 'flex',  overflow:'scroll'}}
+                style={{display: 'flex'}}
             >
-                <Grid item style={{display: 'flex', flexWrap: 'wrap', justifyContent:'space-between'}}>
+                <Grid item style={{display: 'flex', overflow:'hidden'}}>
                     <Vehicule />
                 </Grid>
             </Grid>
